@@ -1,0 +1,48 @@
+dataset:
+  name: human_pancreas_openproblems_v1
+  path: data/raw/human_pancreas_openproblems_v1_log_cp10k.h5ad
+  label_key: cell_type
+  batch_key: batch
+  counts_layer: counts
+  normalized_layer: log_normalized
+
+split:
+  seed: 42
+  strategy: label_stratified
+  train_fraction: 0.7
+  validation_fraction: 0.15
+  test_fraction: 0.15
+  batch_analysis_strategy: per_batch_evaluation
+
+methods:
+  baseline:
+    name: logistic_regression_svd50
+  foundation_models:
+    - scgpt
+    - scimilarity
+    - scfoundation
+  scgpt:
+    model_path: ${CMML_MODEL_DIR:-D:/cmml_models}/scgpt/whole-human
+    linear_probe_name: scgpt_embedding_logreg
+    max_length: 512
+    batch_size: 64
+    gene_col: feature_name
+  scimilarity:
+    model_path: ${CMML_MODEL_DIR:-D:/cmml_models}/scimilarity/annotation_model_v1
+    linear_probe_name: scimilarity_embedding_logreg
+    knn_filename: ../labelled_kNN.bin
+    celltype_labels_filename: ../reference_labels.tsv
+    prediction_k: 50
+  scfoundation:
+    model_path: ${CMML_MODEL_DIR:-D:/cmml_models}/scfoundation/models.ckpt
+    linear_probe_name: scfoundation_embedding_logreg
+    max_genes: 128
+    batch_size: 64
+    tgthighres: t4
+
+metrics:
+  - accuracy
+  - macro_precision
+  - macro_recall
+  - macro_f1
+  - per_class_f1

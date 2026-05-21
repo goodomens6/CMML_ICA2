@@ -1,0 +1,5 @@
+method,split,n_cells,accuracy,macro_precision,macro_recall,macro_f1,status,notes
+logistic_regression_svd50,test,2457,0.9857549857549858,0.9790370208071888,0.9419224215158648,0.9577668192596024,complete,
+scgpt_embedding_logreg,test,2457,0.9711029711029712,0.966289377304182,0.9152487906666156,0.9332940631794356,complete,shared embedding linear probe
+scimilarity_embedding_logreg,test,2457,0.9715099715099716,0.8835182380719822,0.9143524033898652,0.8871781551829125,complete,shared embedding linear probe
+scfoundation_embedding_logreg,test,2457,0.9816849816849816,0.965433824093642,0.9244718953423854,0.9411932964017745,complete,shared embedding linear probe

@@ -1,0 +1,2 @@
+method,split,n_cells,accuracy,macro_precision,macro_recall,macro_f1,status,notes
+logistic_regression_svd50,test_harmonized,2457,0.9877899877899878,0.9891560623257482,0.9463785588850256,0.9649246003830942,complete,

@@ -1,0 +1,2 @@
+method,split,n_cells,accuracy,macro_precision,macro_recall,macro_f1,status,notes
+scimilarity,test_harmonized,2457,0.7704517704517705,0.665726412222762,0.5199266634484642,0.5588685981066182,complete,

@@ -1,0 +1,15 @@
+true_label,acinar,activated_stellate,alpha,beta,delta,ductal,endothelial,epsilon,gamma,macrophage,mast,quiescent_stellate,schwann,t_cell
+acinar,244,0,1,0,0,5,0,0,0,0,0,0,0,0
+activated_stellate,0,66,0,0,0,0,0,0,0,0,0,4,0,0
+alpha,0,0,812,3,0,1,0,0,8,0,0,0,0,0
+beta,0,0,2,604,12,1,0,1,5,0,0,0,0,0
+delta,0,0,0,2,154,0,0,2,0,0,0,0,0,0
+ductal,7,0,2,1,0,309,0,1,0,0,0,0,0,1
+endothelial,0,0,0,0,0,0,47,0,0,0,0,0,0,0
+epsilon,0,0,0,0,1,0,0,3,1,0,0,0,0,0
+gamma,0,0,1,0,0,0,0,3,101,0,0,0,0,0
+macrophage,0,0,1,0,0,0,0,0,0,11,0,0,0,0
+mast,0,0,1,0,0,0,0,0,0,0,5,0,0,0
+quiescent_stellate,0,1,0,0,0,1,0,0,0,0,0,27,0,0
+schwann,0,1,0,0,0,0,0,0,0,0,0,0,3,0
+t_cell,0,0,0,0,0,0,0,0,0,0,0,0,0,1

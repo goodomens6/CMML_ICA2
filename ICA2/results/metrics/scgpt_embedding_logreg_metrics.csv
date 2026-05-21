@@ -1,0 +1,3 @@
+method,split,n_cells,accuracy,macro_precision,macro_recall,macro_f1,status,notes
+scgpt_embedding_logreg,validation,2457,0.9654049654049655,0.8738887916706078,0.9311739219257799,0.8949133868622833,complete,
+scgpt_embedding_logreg,test,2457,0.9711029711029711,0.966289377304182,0.9152487906666157,0.9332940631794356,complete,

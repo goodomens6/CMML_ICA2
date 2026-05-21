@@ -1,0 +1,3 @@
+method,split,n_cells,accuracy,macro_precision,macro_recall,macro_f1,status,notes
+logistic_regression_svd50,validation,2457,0.9816849816849816,0.9167252313565333,0.9644125611227586,0.9340439279913072,complete,
+logistic_regression_svd50,test,2457,0.9857549857549858,0.9790370208071888,0.9419224215158648,0.9577668192596024,complete,

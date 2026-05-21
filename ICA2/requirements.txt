@@ -1,0 +1,13 @@
+numpy
+pandas
+scipy
+scikit-learn
+scanpy
+anndata
+pyyaml
+requests
+torch
+matplotlib
+python-docx
+pillow
+lxml
